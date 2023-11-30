@@ -11,33 +11,33 @@ public class CalculatorServiceImpl implements CalculatorService {
     }
 
     @Override
-    public String addTwoNumbers(int num1, int num2) {
+    public int addTwoNumbers(int num1, int num2) {
 
         int result = num1 + num2;
-        return num1 + " + " + num2 + " = " + result;
+        return  result;
     }
 
     @Override
-    public String subtractTwoNumbers(int num1, int num2) {
+    public int subtractTwoNumbers(int num1, int num2) {
 
         int result = num1 - num2;
-        return num1 + " - " + num2 + " = " + result;
+        return  result;
 
     }
 
     @Override
-    public String multiplyTwoNumbers(int num1, int num2) {
+    public int multiplyTwoNumbers(int num1, int num2) {
 
         int result = num1 * num2;
-        return num1 + " * " + num2 + " = " + result;
+        return  result;
 
     }
 
     @Override
-    public String divideTwoNumbers(int num1, int num2) {
+    public float divideTwoNumbers(int num1, int num2) {
 
         float result = (float) num1 / num2;
-        return num1 + " / " + num2 + " = " + result;
+        return  result;
 
     }
 

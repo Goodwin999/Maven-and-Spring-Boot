@@ -22,17 +22,17 @@ public class CalculatorController {
 
     @GetMapping(path = "/plus")
     public String addTwoNumbers(@RequestParam int num1, @RequestParam int num2) {
-        return calculatorService.addTwoNumbers(num1, num2);
+        return num1 + " + " + num2 + " = " + calculatorService.addTwoNumbers(num1, num2);
     }
 
     @GetMapping(path = "/minus")
     public String subtractTwoNumbers(@RequestParam int num1, @RequestParam int num2) {
-        return calculatorService.subtractTwoNumbers(num1, num2);
+        return num1 + " - " + num2 + " = " + calculatorService.subtractTwoNumbers(num1, num2);
     }
 
     @GetMapping(path = "/multiply")
     public String multiplyTwoNumbers(@RequestParam int num1, @RequestParam int num2) {
-        return calculatorService.multiplyTwoNumbers(num1, num2);
+        return num1 + " * " + num2 + " = " + calculatorService.multiplyTwoNumbers(num1, num2);
     }
 
     @GetMapping(path = "/divide")
@@ -40,7 +40,7 @@ public class CalculatorController {
         if (num2 == 0) {
             return "на ноль делить нельзя";
         }
-        return calculatorService.divideTwoNumbers(num1, num2);
+        return num1 + " / " + num2 + " = " + calculatorService.divideTwoNumbers(num1, num2);
 
     }
 
